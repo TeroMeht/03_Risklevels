@@ -5,10 +5,19 @@
             "use": "@vercel/python"
         }
     ],
+    
     "routes": [
         {
             "src": "/(.*)",
             "dest": "run.py"
         }
-    ]
+    ],
+    
+    "git": {
+        "deploymentEnabled": {
+          "main": false
+        }
+      }
+
+
 }
